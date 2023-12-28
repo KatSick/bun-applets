@@ -1,0 +1,36 @@
+{
+  "name": "super-server",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.tsx",
+    "build": "bun build src/index.tsx",
+    "start": "NODE_ENV=production bun src/index.tsx",
+    "fmt": "bunx @biomejs/biome format ./src --write",
+    "lint": "bunx @biomejs/biome lint ./src --apply",
+    "check": "bunx @biomejs/biome check ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.4.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "npm": "please-use-bun",
+    "yarn": "please-use-bun",
+    "pnpm": "please-use-bun"
+  },
+  "dependencies": {
+    "@elysiajs/eden": "^0.8.0",
+    "@elysiajs/html": "^0.8.0",
+    "@elysiajs/static": "^0.8.1",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/web": "^0.0.131",
+    "elysia": "^0.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
